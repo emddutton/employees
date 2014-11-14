@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='employees.js'></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+    </script>
+
+    <style>
+        body { background-color: #9EAEB3;  }
+        table td { padding: 5px ; border: 1px solid #000084; background-color: #D3D3D3;}
+        #add { margin-top: 5px;  }
+        #edit_box {display: none;}
+        input {background-color: #D3D3D3;}
+        input:focus {border-color: #000084;}
+        button {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #46618f), color-stop(1, #112947));
+            background:-moz-linear-gradient(top, #46618f 5%, #112947 100%);
+            background:-webkit-linear-gradient(top, #46618f 5%, #112947 100%);
+            background:-o-linear-gradient(top, #46618f 5%, #112947 100%);
+            background:-ms-linear-gradient(top, #46618f 5%, #112947 100%);
+            background:linear-gradient(to bottom, #46618f 5%, #112947 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#46618f', endColorstr='#112947',GradientType=0);
+            background-color:#46618f;
+            -moz-border-radius:28px;
+            -webkit-border-radius:28px;
+            border-radius:5px;
+            border:1px solid #13204a;
+            color: #fff;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #0a1836;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Employee List</h1>
+<div id="employee_list"></div>
+
+<button id="add">Add Employee</button>
+
+<div id = "edit_box">
+
+</div>
+
+<div id="displaymap" style="width:500px;height:380px;margin-top:10px"></div>
+
+</body>
+</html>
